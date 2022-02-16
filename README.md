@@ -1,0 +1,1 @@
+This is a clone of [Ro-Data / Ro-Census-Summaries-By-Zipcode](https://github.com/Ro-Data/Ro-Census-Summaries-By-Zipcode) but I changed the files from txt to tsv and added hive schemas so they could be loaded into the AWS Glue Data catalog and queried via Athena. The goal is to make it really easy to query census data without setting up databases.
