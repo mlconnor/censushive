@@ -55,8 +55,9 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\\t'
 ESCAPED BY '\\\\'
 LINES TERMINATED BY '\\n'
-LOCATION
-  's3://uscensusdata/${table}/'`;
+LOCATION 's3://uscensusdata/${table}/'
+TBLPROPERTIES ("skip.header.line.count"="1")
+`;
 
 console.log(output+"\n")
 

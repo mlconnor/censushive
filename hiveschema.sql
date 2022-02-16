@@ -261,8 +261,9 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\t'
 ESCAPED BY '\\'
 LINES TERMINATED BY '\n'
-LOCATION
-  's3://uscensusdata/housing/'
+LOCATION 's3://uscensusdata/housing/'
+TBLPROPERTIES ("skip.header.line.count"="1")
+
 
 -- this is the table definition for economics.tsv
 
@@ -497,8 +498,9 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\t'
 ESCAPED BY '\\'
 LINES TERMINATED BY '\n'
-LOCATION
-  's3://uscensusdata/economics/'
+LOCATION 's3://uscensusdata/economics/'
+TBLPROPERTIES ("skip.header.line.count"="1")
+
 
 -- this is the table definition for demographics.tsv
 
@@ -661,8 +663,9 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\t'
 ESCAPED BY '\\'
 LINES TERMINATED BY '\n'
-LOCATION
-  's3://uscensusdata/demographics/'
+LOCATION 's3://uscensusdata/demographics/'
+TBLPROPERTIES ("skip.header.line.count"="1")
+
 
 -- this is the table definition for rural_urban.tsv
 
@@ -678,8 +681,9 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\t'
 ESCAPED BY '\\'
 LINES TERMINATED BY '\n'
-LOCATION
-  's3://uscensusdata/rural_urban/'
+LOCATION 's3://uscensusdata/rural_urban/'
+TBLPROPERTIES ("skip.header.line.count"="1")
+
 
 -- this is the table definition for social.tsv
 
@@ -941,6 +945,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\t'
 ESCAPED BY '\\'
 LINES TERMINATED BY '\n'
-LOCATION
-  's3://uscensusdata/social/'
+LOCATION 's3://uscensusdata/social/'
+TBLPROPERTIES ("skip.header.line.count"="1")
+
 
